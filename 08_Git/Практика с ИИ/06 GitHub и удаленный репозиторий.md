@@ -145,6 +145,59 @@ git branch -vv
 
 Если видишь `main [origin/main]`, значит связь есть.
 
+## Redirecting с HTTP на HTTPS
+
+Если после `git push` видишь:
+
+```text
+warning: redirecting to https://github.com/SashaEKB/MyObsidianTesting.git/
+```
+
+Это значит, что remote записан через `http://`, а GitHub перенаправляет на `https://`.
+
+Это не критическая ошибка, но лучше поправить URL:
+
+```bash
+git remote set-url origin https://github.com/SashaEKB/MyObsidianTesting.git
+```
+
+Проверить:
+
+```bash
+git remote -v
+```
+
+Лучше, чтобы было `https://`, а не `http://`.
+
+## Main branch isn't protected
+
+GitHub может показать предупреждение:
+
+```text
+Your main branch isn't protected
+```
+
+Смысл: ветка `main` не защищена.
+
+Если `main` не защищена, можно случайно:
+
+- запушить прямо в `main`;
+- удалить `main`;
+- сделать force push;
+- влить изменения без проверки.
+
+Для учебного репозитория это нормально.
+
+Для рабочего проекта `main` обычно защищают, чтобы изменения проходили через Pull Request и review.
+
+Настройка находится здесь:
+
+```text
+GitHub -> repository -> Settings -> Branches -> Branch protection rules
+```
+
+На этапе обучения можно пока не включать, но важно понимать смысл предупреждения.
+
 ## Изменить ссылку remote на SSH
 
 ```bash

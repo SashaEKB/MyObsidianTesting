@@ -1,0 +1,10 @@
+{
+  "attachmentFolderPath": "09_Archive/Attachments",
+  "promptDelete": false,
+  "alwaysUpdateLinks": true,
+  "newFileLocation": "folder",
+  "newFileFolderPath": "00_Inbox",
+  "showLineNumber": false,
+  "readableLineLength": true,
+  "showInlineTitle": false
+}

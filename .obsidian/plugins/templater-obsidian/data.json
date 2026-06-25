@@ -1,0 +1,15 @@
+{
+  "templates_folder": "09_Templates",
+  "trigger_on_file_creation": false,
+  "auto_jump_to_cursor": true,
+  "enable_system_commands": false,
+  "shell_path": "",
+  "user_scripts_folder": "",
+  "folder_templates": [],
+  "file_templates": [],
+  "syntax_highlighting": true,
+  "syntax_highlighting_mobile": false,
+  "enabled_templates_hotkeys": [
+    "09_Templates/YouTube Learning Block.md"
+  ]
+}

@@ -1,12 +1,12 @@
-# Obsidian app state and plugins                                                                                                                                                   
-     .obsidian/                                                                                                                                                                         
-                                                                                                                                                                                        
-     # System files                                                                                                                                                                     
-     .DS_Store                                                                                                                                                                          
-     Thumbs.db                                                                                                                                                                          
-                                                                                                                                                                                        
-     # Temporary files                                                                                                                                                                  
-     *.tmp                                                                                                                                                                              
-     *.bak                                                                                                                                                                              
-     *.swp                                                                                                                                                                              
-     *~         
+# Obsidian app state and plugins
+.obsidian/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*~
